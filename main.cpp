@@ -16,9 +16,7 @@ using namespace std;
 
 // ============================================================
 // GUEST STRUCT
-// This holds all the data for each guest group in the simulation.
-// Think of it like a row in a table where each guest has their
-// own arrival time, ride duration, and calculated wait metrics.
+// Holds all data for each guest group in the simulation.
 // ============================================================
 struct Guest {
     string name;          // Guest group label (G1, G2, etc.)
@@ -33,10 +31,8 @@ struct Guest {
 
 // ============================================================
 // PRINT SCHEDULING ORDER
-// This prints a simple text-based timeline showing what order
-// guests were served and at what time each one finished.
-// It is labeled "Scheduling Order" since it shows execution
-// order as a sequence, not a visual Gantt bar chart.
+// Prints a text-based timeline showing the order guests were
+// served and the time each one finished.
 // ============================================================
 void printSchedulingOrder(vector<pair<string, int>>& timeline) {
     cout << "\nScheduling Order:\n";
@@ -61,9 +57,8 @@ void printSchedulingOrder(vector<pair<string, int>>& timeline) {
 
 // ============================================================
 // PRINT RESULTS TABLE
-// This function prints a formatted table showing each guest's
-// metrics: completion time, turnaround time, and waiting time.
-// At the bottom it calculates and prints the averages.
+// Prints each guest's completion, turnaround, and waiting time.
+// Also calculates and prints the averages at the bottom.
 // ============================================================
 void printResults(vector<Guest>& guests) {
     float totalTAT = 0, totalWT = 0;
@@ -103,9 +98,8 @@ void printResults(vector<Guest>& guests) {
 
 // ============================================================
 // ALGORITHM 1: FCFS - First Come, First Served
-// Guests are served strictly in the order they arrived.
-// No skipping allowed, just like a traditional standby line.
-// Simple and fair, but a slow group at the front holds everyone up.
+// Guests are served in arrival order, like a traditional
+// standby line. Simple but a slow group at the front holds everyone up.
 // ============================================================
 void fcfs(vector<Guest> guests) {
     cout << "\n========================================\n";
@@ -147,9 +141,8 @@ void fcfs(vector<Guest> guests) {
 
 // ============================================================
 // ALGORITHM 2: SJF - Shortest Job First (Non-Preemptive)
-// The guest group with the shortest ride time goes next.
-// This reduces average wait time but longer groups may get skipped
-// repeatedly if short groups keep arriving (starvation).
+// Guest with the shortest ride time goes next. Reduces average
+// wait time but longer groups risk being skipped (starvation).
 // ============================================================
 void sjf(vector<Guest> guests) {
     cout << "\n========================================\n";
@@ -206,8 +199,7 @@ void sjf(vector<Guest> guests) {
 
 // ============================================================
 // ALGORITHM 3: Round Robin
-// Each guest gets a fixed time slice (quantum) before moving on.
-// No single group monopolizes the ride — everyone rotates equally.
+// Each guest gets a fixed time slice before moving to the next.
 // Fair for all guests, but switching between groups adds overhead.
 // ============================================================
 void roundRobin(vector<Guest> guests, int quantum) {
@@ -294,8 +286,7 @@ void roundRobin(vector<Guest> guests, int quantum) {
 
 // ============================================================
 // MAIN
-// This is where the program starts. We define our guest groups
-// and then run all three scheduling algorithms on the same data.
+// Entry point. Defines guest groups and runs all three algorithms.
 // ============================================================
 int main() {
     cout << "============================================================\n";
