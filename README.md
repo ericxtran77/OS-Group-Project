@@ -23,15 +23,15 @@ Together, these three algorithms provide a balanced comparison of different sche
 Quantum (RR) = 3
 
 ## Output:
-============================================================
+
   Disneyland Ride Queue - CPU Scheduling Simulation
   CPSC 351-08 | Spring 2026
-============================================================
 
-========================================
+
+
  FCFS - First Come, First Served
  Guests are served in order of arrival
-========================================
+
 
 Gantt Chart:
  ------------------------------
@@ -50,10 +50,9 @@ G5      4         2         23            19            17
 Average Turnaround Time: 13.20
 Average Waiting Time:    8.60
 
-========================================
  SJF - Shortest Job First
  Shortest ride duration boards first
-========================================
+
 
 Gantt Chart:
  ------------------------------
@@ -71,11 +70,9 @@ G5      4         2         8             4             2
 
 Average Turnaround Time: 10.60
 Average Waiting Time:    6.00
+Round Robin (Quantum = 3)
+Each guest group gets equal time slots
 
-========================================
- Round Robin (Quantum = 3)
- Each guest group gets equal time slots
-========================================
 
 Gantt Chart:
  ------------------------------------------------------
@@ -94,10 +91,7 @@ G5      4         2         17            13            11
 Average Turnaround Time: 14.40
 Average Waiting Time:    9.80
 Total Context Switches (Including the Initial Dispatch): 9
-
-============================================================
-  Simulation Complete
-============================================================
+Simulation Complete
 
 ## Results Summary
 
