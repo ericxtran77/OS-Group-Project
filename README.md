@@ -12,13 +12,13 @@ Round Robin was chosen as well because it introduces the concept of time-sharing
 Together, these three algorithms provide a balanced comparison of different scheduling strategies, which allows us to analyze how each approach will affect factors like waiting time, turnaround time, and also the overall guest experience. If the guests are unhappy, they are unlikely to return and more likely to return to a competitor. 
 
 ## Input:
-| Process | Arrival | Burst   |
-|-------- |-------- |---------|
-|    G1   |   0     |    6    |
-|    G2   |   1     |    3    |
-|    G3   |   2     |    8    |
-|    G4   |   3     |    4    |
-|    G5   |   4     |    2    |
+| Process | Arrival | Burst   | Priority |
+|-------- |-------- |---------|----------|
+|    G1   |   0     |    6    |     2    |
+|    G2   |   1     |    3    |     1    |
+|    G3   |   2     |    8    |     3    |
+|    G4   |   3     |    4    |     2    |
+|    G5   |   4     |    2    |     1    |
 
 Quantum (RR) = 3
 
