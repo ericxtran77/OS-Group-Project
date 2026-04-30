@@ -33,7 +33,7 @@ Quantum (RR) = 3
  Guests are served in order of arrival
 
 
-Gantt Chart:
+Scheduling Order:
 ```
 | G1 | G2 | G3 | G4 | G5 |
 0    6    9    17   21   23
@@ -55,19 +55,19 @@ Average Waiting Time:    8.60
  Shortest ride duration boards first
 
 
-Gantt Chart:
- ------------------------------
-| G1  | G5  | G2  | G4  | G3  |
- ------------------------------
-06     8     11    15    23    
+Scheduling Order:
+```
+| G1 | G5 | G2 | G4 | G3 |
+0    6    8    11   15   23
+```
 
-Group   Arrival   Burst     Completion    Turnaround    Waiting   
-------------------------------------------------------------------
-G1      0         6         6             6             0         
-G2      1         3         11            10            7         
-G3      2         8         23            21            13        
-G4      3         4         15            12            8         
-G5      4         2         8             4             2         
+| Process | Arrival | Burst | Completion | Turnaround | Waiting |
+|--------|--------|------|-----------|------------|---------|
+| G1     | 0      | 6    | 6         | 6          | 0       |
+| G2     | 1      | 3    | 11        | 10         | 7       |
+| G3     | 2      | 8    | 23        | 21         | 13      |
+| G4     | 3      | 4    | 15        | 12         | 8       |
+| G5     | 4      | 2    | 8         | 4          | 2       |
 
 Average Turnaround Time: 10.60
 Average Waiting Time:    6.00
@@ -77,7 +77,7 @@ Round Robin (Quantum = 3)
 Each guest group gets equal time slots
 
 
-Gantt Chart:
+Scheduling Order:
  ------------------------------------------------------
 | G1  | G2  | G3  | G4  | G1  | G5  | G3  | G4  | G3  |
  ------------------------------------------------------
