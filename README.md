@@ -88,6 +88,8 @@ Each guest group gets equal time slots
 | G3     | 2      | 8    | 23        | 21         | 13      |
 | G4     | 3      | 4    | 21        | 18         | 14      |
 | G5     | 4      | 2    | 17        | 13         | 11      |
+
+
 Average Turnaround Time: 14.40
 Average Waiting Time:    9.80
 Total Context Switches (Including the Initial Dispatch): 9
