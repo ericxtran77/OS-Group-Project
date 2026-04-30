@@ -29,7 +29,7 @@ Quantum (RR) = 3
 
 
 
- FCFS - First Come, First Served
+ ## FCFS - First Come, First Served
  Guests are served in order of arrival
 
 
@@ -51,7 +51,7 @@ Scheduling Order:
 Average Turnaround Time: 13.20
 Average Waiting Time:    8.60
 
- SJF - Shortest Job First
+ ## SJF - Shortest Job First
  Shortest ride duration boards first
 
 
@@ -73,7 +73,7 @@ Average Turnaround Time: 10.60
 Average Waiting Time:    6.00
 
 
-Round Robin (Quantum = 3)
+## Round Robin (Quantum = 3)
 Each guest group gets equal time slots
 
 Scheduling Order:
