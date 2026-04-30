@@ -39,13 +39,13 @@ Gantt Chart:
  ------------------------------
 0     6     9    17    21    23
 
-Group   Arrival   Burst     Completion    Turnaround    Waiting   
-------------------------------------------------------------------
-G1      0         6         6             6             0         
-G2      1         3         9             8             5         
-G3      2         8         17            15            7         
-G4      3         4         21            18            14        
-G5      4         2         23            19            17        
+| Process | Arrival | Burst | Completion | Turnaround | Waiting |
+|--------|--------|------|-----------|------------|---------|
+| G1     | 0      | 6    | 6         | 6          | 0       |
+| G2     | 1      | 3    | 9         | 8          | 5       |
+| G3     | 2      | 8    | 17        | 15         | 7       |
+| G4     | 3      | 4    | 21        | 18         | 14      |
+| G5     | 4      | 2    | 23        | 19         | 17      |
 
 Average Turnaround Time: 13.20
 Average Waiting Time:    8.60
