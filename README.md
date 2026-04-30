@@ -76,7 +76,7 @@ Average Waiting Time:    6.00
 Round Robin (Quantum = 3)
 Each guest group gets equal time slots
 
-
+Scheduling Order:
 ```
 | G1 | G2 | G3 | G4 | G1 | G5 | G3 | G4 | G3 |
 0    3    6    9    12   15   17   20   21   23
