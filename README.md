@@ -70,6 +70,8 @@ G5      4         2         8             4             2
 
 Average Turnaround Time: 10.60
 Average Waiting Time:    6.00
+
+
 Round Robin (Quantum = 3)
 Each guest group gets equal time slots
 
