@@ -91,8 +91,12 @@ Each guest group gets equal time slots
 
 
 Average Turnaround Time: 14.40
+
 Average Waiting Time:    9.80
+
 Total Context Switches (Including the Initial Dispatch): 9
+
+
 Simulation Complete
 
 ## Results Summary
