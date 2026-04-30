@@ -77,20 +77,17 @@ Round Robin (Quantum = 3)
 Each guest group gets equal time slots
 
 
-Scheduling Order:
- ------------------------------------------------------
-| G1  | G2  | G3  | G4  | G1  | G5  | G3  | G4  | G3  |
- ------------------------------------------------------
-03     6     9     12    15    17    20    21    23    
-
-Group   Arrival   Burst     Completion    Turnaround    Waiting   
-------------------------------------------------------------------
-G1      0         6         15            15            9         
-G2      1         3         6             5             2         
-G3      2         8         23            21            13        
-G4      3         4         21            18            14        
-G5      4         2         17            13            11        
-
+```
+| G1 | G2 | G3 | G4 | G1 | G5 | G3 | G4 | G3 |
+0    3    6    9    12   15   17   20   21   23
+```
+| Process | Arrival | Burst | Completion | Turnaround | Waiting |
+|--------|--------|------|-----------|------------|---------|
+| G1     | 0      | 6    | 15        | 15         | 9       |
+| G2     | 1      | 3    | 6         | 5          | 2       |
+| G3     | 2      | 8    | 23        | 21         | 13      |
+| G4     | 3      | 4    | 21        | 18         | 14      |
+| G5     | 4      | 2    | 17        | 13         | 11      |
 Average Turnaround Time: 14.40
 Average Waiting Time:    9.80
 Total Context Switches (Including the Initial Dispatch): 9
