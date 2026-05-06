@@ -140,9 +140,9 @@ void fcfs(vector<Guest> guests) {
 }
 
 // ============================================================
-// ALGORITHM 2: SJF - Shortest Job First (Non-Preemptive)
+// ALGORITHM 2: SJF - Shortest Job First 
 // Guest with the shortest ride time goes next. Reduces average
-// wait time but longer groups risk being skipped (starvation).
+// wait time but longer groups risk being skipped.
 // ============================================================
 void sjf(vector<Guest> guests) {
     cout << "\n========================================\n";
