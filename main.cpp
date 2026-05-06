@@ -6,12 +6,12 @@
 // ============================================================
 
 // These are libraries we need for input/output, data structures, and math
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <queue>
-#include <iomanip>
-#include <climits>
+#include <iostream>      // lets you use cout to print things
+#include <vector>        // lets you use vectors (like a resizable array)
+#include <algorithm>     // gives you sort() and min()
+#include <queue>         // gives you the queue data structure used in Round Robin
+#include <iomanip>       // lets you format output with setw() for neat columns
+#include <climits>       // gives you INT_MAX, the largest possible int value
 using namespace std;
 
 // ============================================================
